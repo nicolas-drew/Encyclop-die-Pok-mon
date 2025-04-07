@@ -1,2 +1,2 @@
-# Encyclop-die-Pok-mon
+# Encyclopédie-Pokémon
 projet pour un cours, faire une encyclopedie pokemon
