@@ -10,6 +10,18 @@
   --spectre: #735797;
   --eau: #6390f0;
   --normal: #a8a77a;
+  --feu: #ee8130;
+  --elektrik: #f7d02c;
+  --glace: #96d9d6;
+  --combat: #c22e28;
+  --sol: #e2bf65;
+  --vol: #a98ff3;
+  --insecte: #a6b91a;
+  --roche: #b6a136;
+  --dragon: #6f35fc;
+  --tenebre: #705746;
+  --acier: #b7b7ce;
+  --fee: #d685ad;
 }
 * {
   box-sizing: border-box;
@@ -28,7 +40,6 @@ h1 {
   margin-top: 80px;
 }
 h2 {
-  /* a modifier height/center */
   background-color: var(--background);
   max-width: 70%;
   padding: 10px 5px;
