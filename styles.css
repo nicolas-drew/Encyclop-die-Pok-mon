@@ -4,6 +4,7 @@
   --text: #000;
   --text2: #929292;
   --border: #f9dc5c;
+  /* type */
   --plante: #7ac74c;
   --psy: #f95587;
   --poison: #a33ea1;
@@ -34,7 +35,7 @@ body {
   border-radius: 15px;
 }
 h1 {
-  font-family: "Akaya Telivigala", sans-serif;
+  font-family: "Akaya Telivigala", Arial, Helvetica, sans-serif;
   font-size: 50px;
   display: inline-block;
   margin-top: 80px;
@@ -73,7 +74,6 @@ div img {
   gap: 20px;
 }
 .numero {
-  border: 2px solid var(--border);
   border-radius: 5px;
   color: var(--text2);
   padding: 2px;
@@ -83,7 +83,9 @@ div img {
 .normal,
 .eau,
 .psy,
-.spectre {
+.spectre,
+.glace,
+.vol {
   border-radius: 5px;
   padding: 5px;
   margin: auto 5px;
@@ -106,12 +108,19 @@ div img {
 .spectre {
   background-color: var(--spectre);
 }
+.glace {
+  background-color: var(--glace);
+}
+.vol {
+  background-color: var(--vol);
+}
 .bulbizarre,
 .miaouss,
 .ectoplasma,
 .leveinard,
 .magicarpe,
-.qulbutoke {
+.qulbutoke,
+.artikodin {
   background-color: var(--fiche);
   border: 2px solid var(--border);
   margin: 50px;
@@ -135,6 +144,19 @@ div img {
 }
 .qulbutoke:hover {
   background-color: hsla(342, 93%, 65%, 0.5);
+}
+.artikodin:hover {
+  background-color: hsla(177, 47%, 72%, 0.5);
+}
+.legendaire {
+  position: relative;
+}
+.legendaire::before {
+  content: url(Master_Ball.png);
+  position: absolute;
+  top: -95px;
+  left: -95px;
+  scale: 0.35;
 }
 @media screen and (max-width: 1340px) {
   div img {
