@@ -1,0 +1,151 @@
+:root {
+  --background: #fdf8e1;
+  --fiche: #fcefb4;
+  --text: #000;
+  --text2: #929292;
+  --border: #f9dc5c;
+  --plante: #7ac74c;
+  --psy: #f95587;
+  --poison: #a33ea1;
+  --spectre: #735797;
+  --eau: #6390f0;
+  --normal: #a8a77a;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: var(--background);
+  border: 5px solid var(--border);
+  border-radius: 15px;
+}
+h1 {
+  font-family: "Akaya Telivigala", sans-serif;
+  font-size: 50px;
+  display: inline-block;
+  margin-top: 80px;
+}
+h2 {
+  /* a modifier height/center */
+  background-color: var(--background);
+  max-width: 70%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+h2,
+h3 {
+  font-family: "Chocolate Classical Sans", sans-serif;
+}
+#pokemon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+}
+div img {
+  width: 25vw;
+}
+.logo {
+  width: 20vw;
+  margin-top: 2%;
+}
+.titre {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.numero {
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  color: var(--text2);
+  padding: 2px;
+}
+.plante,
+.poison,
+.normal,
+.eau,
+.psy,
+.spectre {
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto 5px;
+}
+.plante {
+  background-color: var(--plante);
+}
+.poison {
+  background-color: var(--poison);
+}
+.normal {
+  background-color: var(--normal);
+}
+.eau {
+  background-color: var(--eau);
+}
+.psy {
+  background-color: var(--psy);
+}
+.spectre {
+  background-color: var(--spectre);
+}
+.bulbizarre,
+.miaouss,
+.ectoplasma,
+.leveinard,
+.magicarpe,
+.qulbutoke {
+  background-color: var(--fiche);
+  border: 2px solid var(--border);
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px 2px #a59fb1;
+}
+.bulbizarre:hover {
+  background-color: hsla(98, 52%, 54%, 0.5);
+}
+.miaouss:hover {
+  background-color: hsla(59, 21%, 57%, 0.5);
+}
+.ectoplasma:hover {
+  background-color: hsla(266, 27%, 47%, 0.5);
+}
+.leveinard:hover {
+  background-color: hsla(59, 21%, 57%, 0.5);
+}
+.magicarpe:hover {
+  background-color: hsla(221, 82%, 66%, 0.5);
+}
+.qulbutoke:hover {
+  background-color: hsla(342, 93%, 65%, 0.5);
+}
+@media screen and (max-width: 1340px) {
+  div img {
+    width: 35vw;
+  }
+  .logo {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div img {
+    width: 35vw;
+  }
+  .logo {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 774px) {
+  div img {
+    width: 50vw;
+  }
+  .logo {
+    width: 40vw;
+  }
+}
